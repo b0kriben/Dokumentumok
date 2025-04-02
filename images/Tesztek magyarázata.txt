@@ -1,0 +1,25 @@
+Test1:
+Ez a teszt azt ellenőrzi, hogy a ServiceChangeViewModel helyesen tölti be a szolgáltatásokat az UpdateView metódus meghívása után.
+
+
+Test2:
+Ez a teszt azt ellenőrzi, hogy amikor meghívják a DoRemoveCommand parancsot, akkor:
+✅ Meghívódik-e az IServiceService.RemoveService(int id) a megfelelő ID-val?
+✅ Meghívódik-e az IServiceService.SelectAllServices() az adatok frissítéséhez?
+
+
+Test3:
+Ez a teszt azt ellenőrzi, hogy amikor meghívják a DoUpdateCommand parancsot, akkor:
+✅ Meghívódik-e az IServiceService.UpdateService(int id, ServiceDto service) a megfelelő adatokkal?
+✅ Meghívódik-e az IServiceService.SelectAllServices() a frissített adatok lekérésére?
+
+
+Test4:
+Ez a teszt azt ellenőrzi, hogy amikor meghívják a DoNewCommand parancsot, akkor:
+✅ Meghívódik-e az IServiceService.CreateService(ServiceDto service) a megfelelő adatokkal?
+✅ Meghívódik-e az IServiceService.SelectAllServices() a frissített adatok lekérésére?
+
+
+Test5:
+Ez a teszt azt ellenőrzi, hogy amikor meghívják a ResetFormCommand parancsot, akkor:
+✅ A SelectedService mező visszaáll-e egy új, üres ServiceDto objektumra?
